@@ -1,0 +1,88 @@
+#!/usr/bin/env zsh
+
+readonly MODEL_NAME=`system_profiler SPHardwareDataType | awk -F ': ' '/Model Name:/ {print $2}'`
+
+brew update
+brew upgrade -all
+
+brew tap beeftornado/rmtree
+brew tap homebrew/homebrew-php
+brew tap homebrew/services
+
+#brew install brew-rmtree
+brew install coreutils
+#brew install gnu-sed
+#brew install mysql
+#brew install node
+#brew install php70 php70-intl php70-mcrypt php70-mongodb composer symfony-installer
+#brew install tree
+#brew install wget
+#brew install zsh zsh-syntax-highlighting
+
+# MySQL
+#brew services restart mysql
+
+# Node.js
+#npm install -g bower
+
+# Zsh
+grep -q "/usr/local/bin/zsh" /etc/shells
+if [ $? -ne 0 ]; then
+  sudo sh -c 'echo "/usr/local/bin/zsh" >> /etc/shells'
+  chsh -s /usr/local/bin/zsh
+fi
+
+# mas-cli
+# https://github.com/argon/mas
+brew install mas
+
+#mas install 409201541  # Pages
+#mas install 409203825  # Numbers
+#mas install 409183694  # Keynote
+
+mas install 443987910  # 1Password
+#mas install 918858936  # Airmail 2.6
+mas install 417375580  # BetterSnapTool
+#mas install 411246225  # Caffeine
+#mas install 508368068  # Get Plain Text
+#mas install 539883307  # LINE
+#mas install 419339170  # Moom
+#mas install 904071710  # OmniFocus 2
+#mas install 425424353  # The Unarchiver
+#mas install 595374522  # Virus Scanner Plus
+#mas install 599799247  # そら案内
+
+# Homebrew Cask
+# http://caskroom.io/
+brew tap caskroom/cask
+
+brew cask install appcleaner
+#brew cask install asepsis  # System Integrity Protection
+brew cask install bettertouchtool
+brew cask install dropbox
+#brew cask install firefox
+brew cask install flux
+brew cask install google-chrome
+brew cask install iterm2
+#brew cask install java
+brew cask install kindle
+#brew cask install maczip4win
+#brew cask install mysqlworkbench
+brew cask install parallels-desktop
+brew cask install phpstorm
+#brew cask install sequel-pro
+brew cask install skype
+#brew cask install totalfinder  # System Integrity Protection
+#brew cask install vivaldi
+#brew cask install webstorm
+
+case "$MODEL_NAME" in
+  "Macbook Air"|"Macbook Pro")
+    #brew cask install nosleep
+    ;;
+  "iMac"|"Mac mini")
+    #brew cask install karabiner
+    ;;
+esac
+
+brew cleanup

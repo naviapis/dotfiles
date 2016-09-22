@@ -1,0 +1,9 @@
+[credential]
+	helper = osxkeychain
+[user]
+	name = Haruki Fukui
+	email = haruki.fukui@naviapis.com
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
