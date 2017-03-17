@@ -1,6 +1,7 @@
 # zsh-syntax-highlighting
 if [ -e $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
     source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+    export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
 fi
 
 # PHP
@@ -15,6 +16,8 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 #if $(brew ls --versions android-sdk &> /dev/null); then
 #    export ANDROID_HOME=$(brew --prefix android-sdk)
 #fi
+
+eval $(gdircolors ~/.dircolors)
 
 #eval `gdircolors $HOME/.dircolors`
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
