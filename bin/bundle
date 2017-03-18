@@ -1,4 +1,0 @@
-#!/usr/bin/env zsh
-
-ansible-playbook $HOME/.dotfiles/local.yml
-mas install 918858936 # Airmail 3

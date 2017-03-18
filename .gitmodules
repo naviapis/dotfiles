@@ -4,9 +4,6 @@
 [submodule ".ssh"]
 	path = .ssh
 	url = https://github.com/naviapis/dotfiles-ssh.git
-[submodule ".zprezto"]
-	path = .zprezto
-	url = https://github.com/sorin-ionescu/prezto.git
 [submodule ".zgen"]
 	path = .zgen
 	url = https://github.com/tarjoilija/zgen.git
