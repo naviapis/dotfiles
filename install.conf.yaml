@@ -1,0 +1,21 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.oh-my-zsh: .oh-my-zsh
+    ~/.oh-my-zsh-custom: .oh-my-zsh-custom
+    ~/.ssh: .ssh
+    ~/.vim: .vim
+    ~/.gitignore_global: .gitignore_global
+    ~/.vimrc: .vimrc
+    ~/.zshrc: .zshrc
+    ~/Brewfile: Brewfile
+    ~/.dir_colors: .dir_colors
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [git config --global core.excludesfile ~/.gitignore_global, Create a global .gitignore]
+  - [brew bundle, Install or upgrade all dependencies in a Brewfile.]

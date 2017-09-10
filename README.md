@@ -12,7 +12,3 @@ $ brew doctor
 ## App Store
 
 * <a href="https://itunes.apple.com/jp/app/id497799835" target="_blank">Xcode</a>
-
-### Vendor
-
-* //<a href="https://itunes.apple.com/jp/app/id975937182" target="_blank">Fantastical 2</a>

@@ -1,49 +1,61 @@
-"-----------------------------------------------
-" NeoBundle Configuration
-" https://github.com/Shougo/neobundle.vim
-"-----------------------------------------------
-" Note: Skip initialization for vim-tiny or vim-small.
-if 0 | endif
-
+"dein Scripts-----------------------------
 if &compatible
   set nocompatible               " Be iMproved
 endif
 
 " Required:
-set runtimepath^=~/.vim/bundle/neobundle.vim/
+set runtimepath+=~/.vim/bundle/dein.vim
 
 " Required:
-call neobundle#begin(expand('~/.vim/bundle/'))
+if dein#load_state('~/.vim/bundle')
+  call dein#begin('~/.vim/bundle')
 
-" Let NeoBundle manage NeoBundle
+  " Let dein manage dein
+  " Required:
+  call dein#add('~/.vim/bundle/dein.vim')
+
+  " Add or remove your plugins here:
+  call dein#add('Shougo/neosnippet.vim')
+  call dein#add('Shougo/neosnippet-snippets')
+  call dein#add('Shougo/vimshell')
+  call dein#add('Shougo/deoplete.nvim')
+  call dein#add('altercation/vim-colors-solarized')
+
+  " Required:
+  call dein#end()
+  call dein#save_state()
+endif
+
 " Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
+filetype plugin indent on
+syntax enable
+
+" If you want to install not installed plugins on startup.
+"if dein#check_install()
+"  call dein#install()
+"endif
+
+"End dein Scripts-------------------------
+
+
+"-----------------------------------------------
+" NeoBundle Configuration
+" https://github.com/Shougo/neobundle.vim
+"-----------------------------------------------
 
 " My Bundles here:
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
-NeoBundle 'Shougo/vimproc.vim', {
-\ 'build' : {
-\     'windows' : 'tools\\update-dll-mingw',
-\     'cygwin' : 'make -f make_cygwin.mak',
-\     'mac' : 'make',
-\     'linux' : 'make',
-\     'unix' : 'gmake',
-\    },
-\ }
-NeoBundle 'Shougo/neocomplcache'
-NeoBundle 'Shougo/neosnippet'
-NeoBundle 'Shougo/neosnippet-snippets'
-NeoBundle 'altercation/vim-colors-solarized'
-
-call neobundle#end()
-
-" Required:
-filetype plugin indent on
-
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
+"NeoBundle 'Shougo/vimproc.vim', {
+"\ 'build' : {
+"\     'windows' : 'tools\\update-dll-mingw',
+"\     'cygwin' : 'make -f make_cygwin.mak',
+"\     'mac' : 'make',
+"\     'linux' : 'make',
+"\     'unix' : 'gmake',
+"\    },
+"\ }
+"NeoBundle 'Shougo/neocomplcache'
 
 
 "-----------------------------------------------
