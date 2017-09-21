@@ -1,5 +1,6 @@
 tap 'beeftornado/rmtree'
 tap 'homebrew/homebrew-php'
+tap 'caskroom/fonts'
 
 # brew 'android-sdk'
 brew 'ansible'
@@ -30,6 +31,7 @@ cask 'audirvana-plus'
 cask 'bartender'
 cask 'bettertouchtool'
 cask 'blender'
+cask 'cheatsheet'
 cask 'clipy'
 cask 'cmd-eikana'
 cask 'docker'
@@ -73,5 +75,5 @@ mas 'PopClip', id: 445189367
 mas 'SoraAnnai', id: 599799247
 mas 'Spark', id: 1176895641
 mas 'Transmit', id: 403388562
-# mas 'VirusScannerPlus', id: 595374522
+mas 'VirusScannerPlus', id: 595374522
 mas 'Yoink', id: 457622435

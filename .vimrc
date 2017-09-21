@@ -4,7 +4,7 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=~/.vim/bundle/dein.vim
+set runtimepath+=~/.vim/bundle/repos/github.com/Shougo/dein.vim
 
 " Required:
 if dein#load_state('~/.vim/bundle')
@@ -19,6 +19,7 @@ if dein#load_state('~/.vim/bundle')
   call dein#add('Shougo/neosnippet-snippets')
   call dein#add('Shougo/vimshell')
   call dein#add('Shougo/deoplete.nvim')
+  call dein#add('scrooloose/nerdtree')
   call dein#add('altercation/vim-colors-solarized')
 
   " Required:
@@ -37,6 +38,15 @@ syntax enable
 
 "End dein Scripts-------------------------
 
+"-----------------------------------------------
+" NERDTree Configuration
+" https://github.com/scrooloose/nerdtree
+"-----------------------------------------------
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+map <C-n> :NERDTreeToggle<CR>
 
 "-----------------------------------------------
 " neosnippet Configuration
@@ -80,6 +90,6 @@ set ruler
 set swapfile
 set backupdir=/tmp
 set directory=/tmp
-set clipboard=unnamed,autoselect
+"set clipboard=unnamed,autoselect
 set noundofile
 set backspace=indent,eol,start

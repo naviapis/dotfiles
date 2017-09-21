@@ -1,15 +1,9 @@
-[submodule ".oh-my-zsh"]
-	path = .oh-my-zsh
-	url = https://github.com/robbyrussell/oh-my-zsh.git
-[submodule ".oh-my-zsh-custom/plugins/zsh-syntax-highlighting"]
-	path = .oh-my-zsh-custom/plugins/zsh-syntax-highlighting
-	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
-[submodule ".oh-my-zsh-custom/themes/powerlevel9k"]
-	path = .oh-my-zsh-custom/themes/powerlevel9k
-	url = https://github.com/bhilburn/powerlevel9k.git
-[submodule ".vim/bundle/dein.vim"]
-	path = .vim/bundle/dein.vim
-	url = https://github.com/Shougo/dein.vim
-[submodule ".oh-my-zsh-custom/plugins/zsh-autosuggestions"]
-	path = .oh-my-zsh-custom/plugins/zsh-autosuggestions
-	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot.git
+[submodule ".vim/bundle/repos/github.com/Shougo/dein.vim"]
+	path = .vim/bundle/repos/github.com/Shougo/dein.vim
+	url = https://github.com/Shougo/dein.vim.git
+[submodule ".zsh/antigen"]
+	path = .zsh/antigen
+	url = https://github.com/zsh-users/antigen.git

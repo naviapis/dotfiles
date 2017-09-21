@@ -1,3 +1,10 @@
+/.config/nvim/.netrwhist
 /.vim/.netrwhist
 /.vim/bundle/*
-!.vim/bundle/dein.vim
+!.vim/bundle/repos
+/.vim/bundle/repos/*
+!.vim/bundle/repos/github.com
+/.vim/bundle/repos/github.com/*
+!.vim/bundle/repos/github.com/Shougo
+/.vim/bundle/repos/github.com/Shougo/*
+!.vim/bundle/repos/github.com/Shougo/dein.vim
