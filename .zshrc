@@ -1,7 +1,7 @@
 export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH
 export PATH=$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH
 
-source ~/.zsh/antigen/antigen.zsh
+source ~/.antigen/bundles/zsh-users/antigen/antigen.zsh
 
 antigen use oh-my-zsh
 
@@ -20,40 +20,14 @@ antigen theme bhilburn/powerlevel9k powerlevel9k
 antigen apply
 
 
-source ~/.zsh/*.zsh
-
+source ~/.zsh/aliases.zsh
+source ~/.zsh/lazy-load-nvm.zsh
 
 # Java Development Kit
 export JAVA_HOME=$(/usr/libexec/java_home)
 
 eval $(gdircolors ~/.dir_colors)
 
-# Lazy load nvm
-export NVM_DIR=$HOME/.nvm
-
-nvm() {
-  unset -f nvm
-  . $(brew --prefix)/opt/nvm/nvm.sh
-  nvm "$@"
-}
-
-node() {
-  unset -f node
-  . $(brew --prefix)/opt/nvm/nvm.sh
-  node "$@"
-}
-
-npm() {
-  unset -f npm
-  . $(brew --prefix)/opt/nvm/nvm.sh
-  npm "$@"
-}
-
-yarn() {
-  unset -f yarn
-  . $(brew --prefix)/opt/nvm/nvm.sh
-  yarn "$@"
-}
 
 
 # tabtab source for serverless package

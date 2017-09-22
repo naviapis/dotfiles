@@ -1,3 +1,9 @@
+/.antigen/*
+!.antigen/bundles
+/.antigen/bundles/*
+!.antigen/bundles/zsh-users
+/.antigen/bundles/zsh-users/*
+!.antigen/bundles/zsh-users/antigen
 /.config/nvim/.netrwhist
 /.vim/.netrwhist
 /.vim/bundle/*

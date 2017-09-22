@@ -20,6 +20,7 @@ if dein#load_state('~/.vim/bundle')
   call dein#add('Shougo/vimshell')
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('scrooloose/nerdtree')
+  call dein#add('tpope/vim-surround')
   call dein#add('altercation/vim-colors-solarized')
 
   " Required:
@@ -47,6 +48,7 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
 
 "-----------------------------------------------
 " neosnippet Configuration
@@ -93,3 +95,5 @@ set directory=/tmp
 "set clipboard=unnamed,autoselect
 set noundofile
 set backspace=indent,eol,start
+
+map <C-s> :w<CR>
