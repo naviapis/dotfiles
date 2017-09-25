@@ -1,5 +1,6 @@
 export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH
 export PATH=$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH
+export TERM="xterm-256color"
 
 source ~/.antigen/bundles/zsh-users/antigen/antigen.zsh
 
@@ -13,6 +14,7 @@ antigen bundle symfony2
 
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen theme bhilburn/powerlevel9k powerlevel9k

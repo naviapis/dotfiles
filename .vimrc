@@ -12,16 +12,15 @@ if dein#load_state('~/.vim/bundle')
 
   " Let dein manage dein
   " Required:
-  call dein#add('~/.vim/bundle/dein.vim')
+  call dein#add('~/.vim/bundle/repos/github.com/Shougo/dein.vim')
 
   " Add or remove your plugins here:
-  call dein#add('Shougo/neosnippet.vim')
-  call dein#add('Shougo/neosnippet-snippets')
   call dein#add('Shougo/vimshell')
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('scrooloose/nerdtree')
   call dein#add('tpope/vim-surround')
   call dein#add('altercation/vim-colors-solarized')
+  call dein#load_toml('~/.vim/dein.toml', {'lazy': 1})
 
   " Required:
   call dein#end()
@@ -33,9 +32,9 @@ filetype plugin indent on
 syntax enable
 
 " If you want to install not installed plugins on startup.
-"if dein#check_install()
-"  call dein#install()
-"endif
+if dein#check_install()
+  call dein#install()
+endif
 
 "End dein Scripts-------------------------
 
