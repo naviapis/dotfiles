@@ -6,17 +6,25 @@
 
 - link:
     ~/.antigen: .antigen
-    ~/.config/nvim: .config/nvim
+    ~/.config/nvim:
+      create: true
+      path: .config/nvim
+    ~/.nvm/default-packages:
+      create: true
+      path: .nvm/default-packages
     ~/.vim: .vim
+    ~/.zsh: .zsh
+    ~/.asepsis-suppress-update-errors: .asepsis-suppress-update-errors
     ~/.dir_colors: .dir_colors
     ~/.gitignore_global: .gitignore_global
+    ~/.no-asepsis-os-restriction: .no-asepsis-os-restriction
     ~/.tmux.conf: .tmux.conf
     ~/.vimrc: .vimrc
-    ~/.zsh: .zsh
     ~/.zshrc: .zshrc
     ~/Brewfile: Brewfile
+    '~/Library/Application Support/Sublime Text 3/Packages/User': Sublime/User
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - [git config --global core.excludesfile ~/.gitignore_global, Create a global .gitignore]
-  - [brew bundle, Install or upgrade all dependencies in a Brewfile.]
+#  - [brew bundle, Install or upgrade all dependencies in a Brewfile.]

@@ -21,6 +21,8 @@ if dein#load_state('~/.vim/bundle')
   call dein#add('tpope/vim-surround')
   call dein#add('altercation/vim-colors-solarized')
   call dein#load_toml('~/.vim/dein.toml', {'lazy': 1})
+  call dein#add('vim-airline/vim-airline')
+  call dein#add('vim-airline/vim-airline-themes')
 
   " Required:
   call dein#end()
@@ -80,6 +82,14 @@ set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 
+
+"-----------------------------------------------
+" vim-airline Configuration
+"-----------------------------------------------
+
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'solarized'
+let g:airline_solarized_bg='dark'
 
 "-----------------------------------------------
 " Configuration

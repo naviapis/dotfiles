@@ -1,6 +1,7 @@
 export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH
-export PATH=$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH
+#export PATH=$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH
 export TERM="xterm-256color"
+export HOMEBREW_GITHUB_API_TOKEN="05a5dda6b356c5aafa85f1aa5629af14f3a1ea71"
 
 source ~/.antigen/bundles/zsh-users/antigen/antigen.zsh
 
