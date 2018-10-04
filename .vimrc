@@ -23,6 +23,7 @@ if dein#load_state('~/.vim/bundle')
   call dein#load_toml('~/.vim/dein.toml', {'lazy': 1})
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
+  call dein#add('moll/vim-node')
 
   " Required:
   call dein#end()
@@ -105,4 +106,8 @@ set directory=/tmp
 set noundofile
 set backspace=indent,eol,start
 
-map <C-s> :w<CR>
+autocmd User Node
+  \ if &filetype == "javascript" |
+  \   nmap <buffer> <C-w>f <Plug>NodeVSplitGotoFile |
+  \   nmap <buffer> <C-w><C-f> <Plug>NodeVSplitGotoFile |
+  \ endif

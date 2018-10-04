@@ -1,6 +1,7 @@
 alias vi='nvim'
 alias vim='nvim'
-alias dotbot='sh ~/.dotfiles/install'
+alias dotfiles='subl ~/.dotfiles'
+alias dotbot='. ~/install'
 
 # List direcory contents
 alias ls='gls --color=auto'

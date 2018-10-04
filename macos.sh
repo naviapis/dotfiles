@@ -31,8 +31,9 @@ defaults write com.apple.dock tilesize -int 44
 defaults write com.apple.dock minimize-to-application -bool true
 
 # Dockを自動的に隠す/表示
-#defaults write com.apple.dock autohide -bool true
-#defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0
 
 ###############################################################################
 # Mission Control                                                             #
@@ -128,18 +129,10 @@ defaults write com.apple.finder _FXSortFoldersFirst -bool true
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
 ###############################################################################
-# Cripy                                                                       #
-###############################################################################
-
-# クリップボード履歴 / 記憶する履歴の数 (デフォルト: 30)
-defaults write com.clipy-app.Clipy kCPYPrefMaxHistorySizeKey -int 100
-
-###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
-for app in "Cripy" \
-        "Dock" \
+for app in "Dock" \
         "Finder"; do
     killall "${app}" &> /dev/null
 done

@@ -5,10 +5,11 @@
 	],
 	"installed_packages":
 	[
+		"ApacheConf",
 		"BracketHighlighter",
 		"Emmet",
+		"INI",
 		"Package Control",
-		"SFTP",
 		"SideBarEnhancements",
 		"SublimeLinter"
 	]

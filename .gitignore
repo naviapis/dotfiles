@@ -5,6 +5,8 @@
 /.antigen/bundles/zsh-users/*
 !.antigen/bundles/zsh-users/antigen
 /.config/nvim/.netrwhist
+/.tmux/plugins/*
+!.tmux/plugins/tpm
 /.vim/.netrwhist
 /.vim/bundle/*
 !.vim/bundle/repos
@@ -14,3 +16,4 @@
 !.vim/bundle/repos/github.com/Shougo
 /.vim/bundle/repos/github.com/Shougo/*
 !.vim/bundle/repos/github.com/Shougo/dein.vim
+/.zsh/private.zsh

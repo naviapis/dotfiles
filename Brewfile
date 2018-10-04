@@ -1,27 +1,23 @@
 tap 'beeftornado/rmtree'
-tap 'homebrew/homebrew-php'
 tap 'sanemat/font'
+tap 'sscotth/sip'
 
-# brew 'android-sdk'
 brew 'ansible'
+brew 'apache2', restart_service: true
 brew 'awscli'
-# brew 'brew-php-switcher'
+brew 'brew-php-switcher'
 brew 'composer'
 brew 'coreutils'
 brew 'git'
-brew 'git-crypt'
 brew 'git-flow'
-brew 'gradle'
 brew 'hub'
-brew 'maven'
-# brew 'mysql', restart_service: true
+brew 'mysql@5.7', restart_service: :changed, link: true, conflicts_with: ["mysql"]
 brew 'neovim'
 brew 'nvm'
-brew 'php71'
-brew 'python'
-brew 'python3'
+brew 'php'
+brew 'php@7.0', conflicts_with: ["php"]
+brew 'phpunit'
 brew 'ricty', args: ['with-powerline']
-brew 'symfony-installer'
 brew 'tmux'
 brew 'tree'
 brew 'wget'
@@ -29,54 +25,49 @@ brew 'zsh'
 
 cask 'alfred'
 cask 'appcleaner'
-cask 'asepsis'
-# cask 'atom'
 cask 'audirvana-plus'
 cask 'bartender'
 cask 'bettertouchtool'
-cask 'blender'
-#cask 'cheatsheet'
+cask 'chatwork'
 cask 'clipy'
-cask 'cmd-eikana'
 cask 'docker'
 cask 'dropbox'
-# cask 'eclipse-installer'
+cask 'duet'
 cask 'firefox'
 cask 'flux'
-#cask 'google-backup-and-sync'
 cask 'google-chrome'
-cask 'intellij-idea'
+cask 'istat-menus'
 cask 'iterm2'
 cask 'java'
+cask 'jetbrains-toolbox'
+cask 'karabiner-elements'
 cask 'kindle'
 cask 'maczip4win'
 cask 'microsoft-office'
-cask 'murus'
-cask 'murus-menulet'
-#cask 'mysqlworkbench'
-cask 'parallels-desktop'
-cask 'phpstorm'
+cask 'mysqlworkbench'
+cask 'parallels'
+cask 'postman'
 cask 'sequel-pro'
 cask 'sketch'
 cask 'skype'
 cask 'sublime-text'
 cask 'totalfinder'
-# cask 'vivaldi'
-cask 'unity'
-cask 'visual-studio'
-# cask 'visual-studio-code'
-cask 'webstorm'
+cask 'vlc'
 
-mas '1Password', id: 443987910
-mas 'Amphetamine', id: 937984704
-mas 'Fantastical 2', id: 975937182
-mas 'FormatMatch', id: 445211988
-mas 'LINE', id: 539883307
-mas 'The Unarchiver', id: 425424353
-mas 'Moom', id: 419330170
-mas 'PopClip', id: 445189367
-mas 'SoraAnnai', id: 599799247
-mas 'Spark', id: 1176895641
-mas 'Transmit', id: 403388562
-mas 'VirusScannerPlus', id: 595374522
-mas 'Yoink', id: 457622435
+#mas '1Password', id: 443987910
+#mas 'Amphetamine', id: 937984704
+#mas 'Fantastical 2', id: 975937182
+#mas 'FormatMatch', id: 445211988
+#mas 'LINE', id: 539883307
+#mas 'Moom', id: 419330170
+#mas 'OmniFocus 2', id: 867299399
+#mas 'Parallels Client', id: 600925318
+#mas 'PopClip', id: 445189367
+#mas 'SoraAnnai', id: 599799247
+#mas 'Spark', id: 1176895641
+#mas 'Slack', id: 803453959
+#mas 'The Unarchiver', id: 425424353
+#mas 'Transmit', id: 403388562
+#mas 'VirusScannerPlus', id: 595374522
+#mas 'Xcode', id: 497799835
+#mas 'Yoink', id: 457622435
