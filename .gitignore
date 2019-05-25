@@ -16,3 +16,4 @@
 !vim/bundle/repos/github.com/Shougo
 /vim/bundle/repos/github.com/Shougo/*
 !vim/bundle/repos/github.com/Shougo/dein.vim
+/zsh/private.zsh

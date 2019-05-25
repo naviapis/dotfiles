@@ -5,23 +5,32 @@
 - clean: ['~']
 
 - link:
-    ~/.antigen: .antigen
+    ~/.antigen/bundles/zsh-users/antigen:
+      create: true
+      path: antigen
     ~/.config/nvim:
       create: true
-      path: .config/nvim
-    ~/.tmux: .tmux
-    ~/.vim: .vim
+      path: config/nvim
+    ~/.tmux/plugins/tpm:
+      create: true
+      path: tpm
+    ~/.vim: vim
+    ~/.vim/bundle/repos/github.com/Shougo/dein.vim:
+      create: true
+      path: dein.vim
     ~/.zsh: zsh
-    ~/.dir_colors: .dir_colors
+    ~/.antigenrc: antigenrc
+    ~/.dir_colors: dir_colors
     ~/.gitignore: gitignore
-    ~/.tmux.conf: .tmux.conf
-    ~/.vimrc: .vimrc
-    ~/.zshrc: .zshrc
+    ~/.mackup: mackup
+    ~/.mackup.cfg: mackup.cfg
+    ~/.tmux.conf: tmux.conf
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
     ~/bin: bin
     ~/Brewfile: Brewfile
-    '~/Library/Application Support/Sublime Text 3/Packages/User': Sublime/User
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - [git config --global core.excludesfile ~/.gitignore_global, Create a global .gitignore]
+  - [git config --global core.excludesfile ~/.gitignore, Create a global .gitignore]
   - [chmod +x ~/bin/*, Change permissions]
