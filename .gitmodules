@@ -1,12 +1,12 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot.git
-[submodule ".vim/bundle/repos/github.com/Shougo/dein.vim"]
-	path = .vim/bundle/repos/github.com/Shougo/dein.vim
+[submodule "vim/bundle/repos/github.com/Shougo/dein.vim"]
+	path = vim/bundle/repos/github.com/Shougo/dein.vim
 	url = https://github.com/Shougo/dein.vim.git
-[submodule ".tmux/plugins/tpm"]
-	path = .tmux/plugins/tpm
+[submodule "tmux/plugins/tpm"]
+	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
-[submodule ".antigen/bundles/zsh-users/antigen"]
-	path = .antigen/bundles/zsh-users/antigen
+[submodule "antigen/bundles/zsh-users/antigen"]
+	path = antigen/bundles/zsh-users/antigen
 	url = https://github.com/zsh-users/antigen.git

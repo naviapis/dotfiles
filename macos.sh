@@ -15,7 +15,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Disable the sound effects on boot
-#sudo nvram SystemAudioVolume=" "
+sudo nvram SystemAudioVolume=" "
 
 ###############################################################################
 # Dock                                                                        #
@@ -31,7 +31,7 @@ defaults write com.apple.dock tilesize -int 44
 defaults write com.apple.dock minimize-to-application -bool true
 
 # Dockを自動的に隠す/表示
-defaults write com.apple.dock autohide -bool true
+#defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -float 0
 

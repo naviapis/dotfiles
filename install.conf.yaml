@@ -9,17 +9,14 @@
     ~/.config/nvim:
       create: true
       path: .config/nvim
-    ~/.nvm/default-packages:
-      create: true
-      path: .nvm/default-packages
     ~/.tmux: .tmux
     ~/.vim: .vim
-    ~/.zsh: .zsh
+    ~/.zsh: zsh
     ~/.dir_colors: .dir_colors
-    ~/.gitignore_global: .gitignore_global
+    ~/.gitignore: gitignore
     ~/.tmux.conf: .tmux.conf
     ~/.vimrc: .vimrc
-    ~/.zshenv: .zshenv
+    ~/.zshrc: .zshrc
     ~/bin: bin
     ~/Brewfile: Brewfile
     '~/Library/Application Support/Sublime Text 3/Packages/User': Sublime/User
@@ -27,4 +24,4 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - [git config --global core.excludesfile ~/.gitignore_global, Create a global .gitignore]
-  - [brew bundle, Install or upgrade all dependencies in a Brewfile.]
+  - [chmod +x ~/bin/*, Change permissions]

@@ -6,10 +6,18 @@
 	"installed_packages":
 	[
 		"ApacheConf",
+		"Babel",
+		"Better CoffeeScript",
 		"BracketHighlighter",
+		"Codecs33",
+		"ConvertToUTF8",
 		"Emmet",
 		"INI",
+		"JSX",
+		"Log Highlight",
+		"MetaQuotes (MQL4) Language Package",
 		"Package Control",
+		"PHP-Twig",
 		"SideBarEnhancements",
 		"SublimeLinter"
 	]
