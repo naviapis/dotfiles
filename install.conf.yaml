@@ -5,9 +5,6 @@
 - clean: ['~']
 
 - link:
-    ~/.antigen/bundles/zsh-users/antigen:
-      create: true
-      path: antigen
     ~/.config/nvim:
       create: true
       path: config/nvim
@@ -24,6 +21,7 @@
     ~/.gitignore: gitignore
     ~/.mackup: mackup
     ~/.mackup.cfg: mackup.cfg
+    ~/.sshrc: sshrc
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc

@@ -4,9 +4,9 @@
 [submodule "tpm"]
 	path = tpm
 	url = https://github.com/tmux-plugins/tpm.git
-[submodule "antigen"]
-	path = antigen
-	url = https://github.com/zsh-users/antigen.git
 [submodule "dein.vim"]
 	path = dein.vim
 	url = https://github.com/Shougo/dein.vim.git
+[submodule "zplugin"]
+	path = zplugin
+	url = https://github.com/zdharma/zplugin.git

@@ -1,30 +1,57 @@
 export TERM="xterm-256color"
-export PYENV_ROOT=$HOME/.pyenv
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 path=(
     $HOME/.composer/vendor/bin
+    $JAVA_HOME/bin
     $HOME/bin
+    /usr/local/opt/curl/bin
     /usr/local/bin
     /usr/local/sbin
     $path
 )
 
-source ~/.zsh/antigen.zsh
 source ~/.zsh/aliases.zsh
 source ~/.zsh/theme.zsh
 if [ -d ~/.zsh/private.zsh ]; then
     source ~/.zsh/private.zsh
 fi
 
-source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
-source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
+# Zplugin
+# https://github.com/zdharma/zplugin/
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
+### Added by Zplugin's installer
+source ~/.dotfiles/zplugin/zplugin.zsh
+autoload -Uz _zplugin
+(( ${+_comps} )) && _comps[zplugin]=_zplugin
+### End of Zplugin's installer chunk
+
+zplugin ice wait blockf lucid
+zplugin light zsh-users/zsh-completions
+
+zplugin ice wait atload"_zsh_autosuggest_start" lucid
+zplugin light zsh-users/zsh-autosuggestions
+
+zplugin ice wait atinit"zpcompinit; zpcdreplay" lucid
+zplugin light zdharma/fast-syntax-highlighting
+
+# Oh My Zsh
+zplugin ice wait lucid
+zplugin snippet OMZ::plugins/brew/brew.plugin.zsh
+
+zplugin ice wait lucid
+zplugin snippet OMZ::plugins/composer/composer.plugin.zsh
+
+zplugin ice wait lucid
+zplugin snippet OMZ::plugins/dotenv/dotenv.plugin.zsh
+
+zplugin ice wait atload"unalias grv" lucid
+zplugin snippet OMZ::plugins/git/git.plugin.zsh
+
+zplugin ice wait lucid
+zplugin snippet OMZ::plugins/symfony2/symfony2.plugin.zsh
+
+zplugin ice wait lucid
+zplugin light jimeh/zsh-peco-history
+
+zplugin light romkatv/powerlevel10k
