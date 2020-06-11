@@ -5,30 +5,50 @@
 - clean: ['~']
 
 - link:
-    ~/.config/nvim:
+    ~/.dotfiles: ''
+    ~/.anyenv/plugins/:
       create: true
-      path: config/nvim
-    ~/.tmux/plugins/tpm:
+      glob: true
+      path: .anyenv/plugins/*
+    ~/.anyenv/envs/nodenv/plugins/:
       create: true
-      path: tpm
-    ~/.vim: vim
-    ~/.vim/bundle/repos/github.com/Shougo/dein.vim:
+      glob: true
+      path: .anyenv/envs/nodenv/plugins/*
+    ~/.config/:
       create: true
-      path: dein.vim
-    ~/.zsh: zsh
-    ~/.antigenrc: antigenrc
-    ~/.dir_colors: dir_colors
-    ~/.gitignore: gitignore
-    ~/.mackup: mackup
-    ~/.mackup.cfg: mackup.cfg
-    ~/.sshrc: sshrc
-    ~/.tmux.conf: tmux.conf
-    ~/.vimrc: vimrc
-    ~/.zshrc: zshrc
-    ~/bin: bin
+      glob: true
+      path: .config/*
+    ~/.config/zsh/:
+      create: true
+      glob: true
+      path: .config/zsh/*
+    ~/.config/zsh/.zshenv:
+      create: true
+      glob: true
+      path: .config/zsh/.zshenv
+    ~/.vim: .vim
+    ~/.zinit/bin:
+        create: true
+        path: .zinit/bin
+    ~/bin/:
+      create: true
+      glob: true
+      path: bin/*
+    ~/doc: doc
+    ~/Movies: Movies
+    ~/Music: Music
+    ~/Parallels: Parallels
+    ~/PhpstormProjects: PhpstormProjects
+    ~/Pictures: Pictures
+    ~/PycharmProjects: PycharmProjects
+    ~/src: src
+    ~/WebstormProjects: WebstormProjects
+    ~/.dircolors: .dircolors
+    ~/.mackup.cfg: .mackup.cfg
+    ~/.vimrc: .vimrc
+    ~/.zshenv: .zshenv
     ~/Brewfile: Brewfile
+    ~/README.md: README.md
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - [git config --global core.excludesfile ~/.gitignore, Create a global .gitignore]
-  - [chmod +x ~/bin/*, Change permissions]

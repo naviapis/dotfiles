@@ -1,12 +1,19 @@
 [submodule "dotbot"]
 	path = dotbot
-	url = https://github.com/anishathalye/dotbot.git
-[submodule "tpm"]
-	path = tpm
-	url = https://github.com/tmux-plugins/tpm.git
-[submodule "dein.vim"]
-	path = dein.vim
-	url = https://github.com/Shougo/dein.vim.git
-[submodule "zplugin"]
-	path = zplugin
-	url = https://github.com/zdharma/zplugin.git
+	url = https://github.com/anishathalye/dotbot
+	ignore = dirty
+[submodule ".anyenv/plugins/anyenv-lazyload"]
+	path = .anyenv/plugins/anyenv-lazyload
+	url = https://github.com/amashigeseiji/anyenv-lazyload.git
+[submodule ".anyenv/plugins/anyenv-update"]
+	path = .anyenv/plugins/anyenv-update
+	url = https://github.com/znz/anyenv-update.git
+[submodule ".anyenv/envs/nodenv/plugins/jetbrains-npm"]
+	path = .anyenv/envs/nodenv/plugins/jetbrains-npm
+	url = https://github.com/nodenv/jetbrains-npm
+[submodule ".zinit/bin"]
+	path = .zinit/bin
+	url = https://github.com/zdharma/zinit.git
+[submodule ".anyenv/envs/nodenv/plugins/nodenv-yarn-install"]
+	path = .anyenv/envs/nodenv/plugins/nodenv-yarn-install
+	url = https://github.com/pine/nodenv-yarn-install.git

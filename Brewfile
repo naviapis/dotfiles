@@ -1,74 +1,80 @@
-tap 'sanemat/font'
+# Homebrew
+# https://github.com/Homebrew/brew
+tap 'beeftornado/rmtree'
+tap 'domt4/autoupdate'
+tap 'homebrew/cask-drivers'
+tap 'homebrew/cask-fonts'
 tap 'sscotth/sip'
 
-#brew 'awscli'
+brew 'anyenv'
+brew 'awscli'
 brew 'coreutils'
 brew 'curl'
-#brew 'dnsmasq'
+brew 'fzf'
 brew 'ghq'
 brew 'git'
+brew 'httpie'
 brew 'hub'
 brew 'jq'
 brew 'mackup'
-brew 'neovim'
-#brew 'node'
 brew 'openssl'
-brew 'peco'
-brew 'ricty', args: ['with-powerline']
-brew 'rmtrash'
-brew 'sshrc'
+brew 'neovim'
+brew 'ranger'
+brew 'pipenv'
+brew 'python'
+brew 'terminal-notifier'
 brew 'tmux'
+brew 'trash'
 brew 'tree'
 brew 'wget'
 brew 'zsh'
 
+# Homebrew Cask
+# https://github.com/Homebrew/homebrew-cask
 cask 'alfred'
 cask 'appcleaner'
-cask 'asepsis'
 cask 'audirvana'
 cask 'bartender'
 cask 'bettertouchtool'
-cask 'clipy'
 cask 'docker'
-#cask 'firefox'
+cask 'dropbox'
 cask 'flux'
+cask 'font-cica'
 cask 'google-chrome'
+cask 'google-drive-file-stream'
+cask 'hackintool'
+cask 'intel-power-gadget'
 cask 'istat-menus'
 cask 'iterm2'
 cask 'jetbrains-toolbox'
 cask 'karabiner-elements'
-#cask 'kindle'
-cask 'maczip4win'
+cask 'keyboardcleantool'
+cask 'kindle'
 cask 'microsoft-office'
 cask 'monitorcontrol'
 cask 'mysqlworkbench'
 cask 'parallels'
-cask 'postman'
-#cask 'resolutionator'
-#cask 'sequel-pro'
 cask 'skype'
-cask 'sublime-merge'
+cask 'sony-ps4-remote-play'
 cask 'sublime-text'
+cask 'tableplus'
 cask 'totalfinder'
 cask 'vlc'
 
+# mas-cli
+# https://github.com/mas-cli/mas
 mas '1Password 7', id: 1333542190
 mas 'Amphetamine', id: 937984704
-mas 'Be Focused Pro', id: 961632517
-mas 'Fantastical 2', id: 975937182
-mas 'Get Plain Text', id: 508368068
+mas 'DaisyDisk', id: 411643860
+mas 'HyperDock', id: 449830122
 mas 'LINE', id: 539883307
 mas 'Moom', id: 419330170
-#mas 'OmniFocus 3', id: 1346203938
 mas 'Parallels Client', id: 600925318
 mas 'PopClip', id: 445189367
-mas 'Quiver', id: 866773894
 mas 'Skitch', id: 425955336
-mas 'SoraAnnai', id: 599799247
-mas 'Spark', id: 1176895641
 mas 'Slack', id: 803453959
+mas 'Spark', id: 1176895641
 mas 'The Unarchiver', id: 425424353
-mas 'Transmit', id: 403388562
-mas 'VirusScannerPlus', id: 595374522
-mas 'Xcode', id: 497799835
+mas 'Xliffie', id: 961651406
 mas 'Yoink', id: 457622435
+mas 'そら案内', id: 599799247

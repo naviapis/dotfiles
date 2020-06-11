@@ -1,0 +1,13 @@
+[user]
+	name = Haruki Fukui
+	email = haruki.fukui@naviapis.com
+[core]
+	ignorecase = false
+[alias]
+	push-f = push --force-with-lease
+[credential]
+	helper = osxkeychain
+[ghq]
+	root = ~/src
+[pull]
+	rebase = false

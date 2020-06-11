@@ -1,1 +1,0 @@
-/Users/haruki/.dotfiles/dein.vim
