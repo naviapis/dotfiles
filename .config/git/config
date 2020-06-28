@@ -3,6 +3,7 @@
 	email = haruki.fukui@naviapis.com
 [core]
 	ignorecase = false
+	commentChar = ";"
 [alias]
 	push-f = push --force-with-lease
 [credential]

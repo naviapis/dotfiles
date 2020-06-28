@@ -38,6 +38,7 @@ cask 'bartender'
 cask 'bettertouchtool'
 cask 'docker'
 cask 'dropbox'
+cask 'fluor'
 cask 'flux'
 cask 'font-cica'
 cask 'google-chrome'
@@ -66,6 +67,7 @@ cask 'vlc'
 mas '1Password 7', id: 1333542190
 mas 'Amphetamine', id: 937984704
 mas 'DaisyDisk', id: 411643860
+mas 'Geekbench 5', id: 1478447657
 mas 'HyperDock', id: 449830122
 mas 'LINE', id: 539883307
 mas 'Moom', id: 419330170

@@ -1,11 +1,34 @@
-# macOS
+# dotfile
 
 * [Odourless](https://github.com/xiaozhuai/odourless)
 * [VPN Tracker 365](https://www.vpntracker.com/)
 
 ## Installation
 
-* Install [Xcode](https://apps.apple.com/jp/app/xcode/id497799835)
+### 1. [Xcode](https://apps.apple.com/jp/app/xcode/id497799835)
+
+* Install Xcode
+
+### 2. [Homebrew](https://brew.sh/)
+
+Install Homebrew
+
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+### Dotfiles
+
+
+```sh
+git clone https://github.com/naviapis/dotfiles.git ~/.dotfiles
+```
+
+```sh
+brew bundle
+vim /etc/shells
+chsh -s /usr/local/bin/zsh
+```
 
 ## Aliases
 
