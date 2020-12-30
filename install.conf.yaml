@@ -18,26 +18,16 @@
       create: true
       glob: true
       path: .config/*
-    ~/.config/zsh/:
-      create: true
-      glob: true
-      path: .config/zsh/*
-    ~/.config/zsh/.zshenv:
-      create: true
-      glob: true
-      path: .config/zsh/.zshenv
-    ~/.vim: .vim
-    ~/.zinit/bin:
-        create: true
-        path: .zinit/bin
+    ~/.config/nvim: .SpaceVim
+    ~/.oh-my-zsh: .oh-my-zsh
+    ~/.SpaceVim: .SpaceVim
+    ~/.SpaceVim.d: .SpaceVim.d
     ~/bin/:
       create: true
       glob: true
       path: bin/*
-    ~/doc: doc
     ~/Movies: Movies
     ~/Music: Music
-    ~/Parallels: Parallels
     ~/PhpstormProjects: PhpstormProjects
     ~/Pictures: Pictures
     ~/PycharmProjects: PycharmProjects
@@ -45,10 +35,8 @@
     ~/WebstormProjects: WebstormProjects
     ~/.dircolors: .dircolors
     ~/.mackup.cfg: .mackup.cfg
-    ~/.vimrc: .vimrc
     ~/.zshenv: .zshenv
     ~/Brewfile: Brewfile
-    ~/README.md: README.md
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

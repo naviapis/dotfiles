@@ -1,5 +1,3 @@
-/.vim/plugged/
-/.vim/.netrwhist
 /Movies/*
 !/Movies/.localized
 /Music/*
