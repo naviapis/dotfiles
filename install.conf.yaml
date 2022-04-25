@@ -6,37 +6,22 @@
 
 - link:
     ~/.dotfiles: ''
+    ~/.anyenv: .anyenv
     ~/.anyenv/plugins/:
       create: true
       glob: true
-      path: .anyenv/plugins/*
-    ~/.anyenv/envs/nodenv/plugins/:
+      path: .anyenv-plugins/*
+    ~/.anyenv/envs/nodenv/plugin/:
       create: true
       glob: true
-      path: .anyenv/envs/nodenv/plugins/*
+      path: .nodenv-plugins/*
     ~/.config/:
       create: true
       glob: true
       path: .config/*
-    ~/.config/nvim: .SpaceVim
-    ~/.oh-my-zsh: .oh-my-zsh
-    ~/.SpaceVim: .SpaceVim
-    ~/.SpaceVim.d: .SpaceVim.d
-    ~/bin/:
-      create: true
-      glob: true
-      path: bin/*
-    ~/Movies: Movies
-    ~/Music: Music
-    ~/PhpstormProjects: PhpstormProjects
-    ~/Pictures: Pictures
-    ~/PycharmProjects: PycharmProjects
-    ~/src: src
-    ~/WebstormProjects: WebstormProjects
     ~/.dircolors: .dircolors
-    ~/.mackup.cfg: .mackup.cfg
+    ~/.oh-my-zsh: .oh-my-zsh
     ~/.zshenv: .zshenv
-    ~/Brewfile: Brewfile
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

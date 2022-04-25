@@ -1,11 +1,13 @@
 setopt no_global_rcs
 
-export HOMEBREW_PREFIX=/usr/local
+export GOPATH=$HOME/go
 
 path=(
+  $HOME/.anyenv/bin
+  $GOPATH/bin
   $HOME/bin
-  /usr/local/bin
   /usr/local/sbin
+  /usr/local/bin
   $path
 )
 

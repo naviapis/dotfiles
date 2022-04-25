@@ -1,12 +1,1 @@
-/Movies/*
-!/Movies/.localized
-/Music/*
-!/Music/.localized
-/Parallels/
-/PhpstormProjects/
-/Pictures/*
-!/Pictures/.localized
-/PycharmProjects/
-/src/
-/WebstormProjects/
-/Brewfile.lock.json
+.config/zsh/custom.zsh

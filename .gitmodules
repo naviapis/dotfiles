@@ -1,25 +1,22 @@
-[submodule ".anyenv/plugins/anyenv-lazyload"]
-	path = .anyenv/plugins/anyenv-lazyload
-	url = https://github.com/amashigeseiji/anyenv-lazyload.git
-[submodule ".anyenv/plugins/anyenv-update"]
-	path = .anyenv/plugins/anyenv-update
-	url = https://github.com/znz/anyenv-update.git
-[submodule ".anyenv/envs/nodenv/plugins/jetbrains-npm"]
-	path = .anyenv/envs/nodenv/plugins/jetbrains-npm
-	url = https://github.com/nodenv/jetbrains-npm
-[submodule ".anyenv/envs/nodenv/plugins/nodenv-yarn-install"]
-	path = .anyenv/envs/nodenv/plugins/nodenv-yarn-install
-	url = https://github.com/pine/nodenv-yarn-install.git
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
-[submodule ".SpaceVim"]
-	path = .SpaceVim
-	url = https://github.com/SpaceVim/SpaceVim.git
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule ".anyenv"]
+	path = .anyenv
+	url = https://github.com/anyenv/anyenv.git
 [submodule ".config/zsh/themes/powerlevel10k"]
 	path = .config/zsh/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule ".anyenv-plugins/anyenv-lazyload"]
+	path = .anyenv-plugins/anyenv-lazyload
+	url = https://github.com/amashigeseiji/anyenv-lazyload.git
+[submodule ".anyenv-plugins/anyenv-update"]
+	path = .anyenv-plugins/anyenv-update
+	url = https://github.com/znz/anyenv-update.git
+[submodule ".nodenv-plugins/nodenv-yarn-install"]
+	path = .nodenv-plugins/nodenv-yarn-install
+	url = https://github.com/pine/nodenv-yarn-install.git
