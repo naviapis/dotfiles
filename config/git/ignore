@@ -49,7 +49,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-# Misc.
-.idea
-.vscode/

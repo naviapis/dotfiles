@@ -1,27 +1,21 @@
 - defaults:
     link:
+      create: true
       relink: true
 
 - clean: ['~']
 
 - link:
-    ~/.dotfiles: ''
-    ~/.anyenv: .anyenv
-    ~/.anyenv/plugins/:
-      create: true
-      glob: true
-      path: .anyenv-plugins/*
-    ~/.anyenv/envs/nodenv/plugin/:
-      create: true
-      glob: true
-      path: .nodenv-plugins/*
+    ~/.SpaceVim.d:
     ~/.config/:
-      create: true
       glob: true
-      path: .config/*
-    ~/.dircolors: .dircolors
-    ~/.oh-my-zsh: .oh-my-zsh
-    ~/.zshenv: .zshenv
+      path: config/*
+    ~/.config/nvim: config/SpaceVim
+    ~/.vim: config/SpaceVim
+    ~/.zshenv:
+    ~/.zprofile: config/zsh/.zprofile
+    ~/.zshrc: config/zsh/.zshrc
+    ~/Brewfile:
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

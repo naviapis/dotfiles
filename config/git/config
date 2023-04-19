@@ -1,9 +1,9 @@
-[user]
-	name = Haruki Fukui
-	email = haruki.fukui@naviapis.com
 [core]
-	ignorecase = false
 	commentChar = ";"
+	ignorecase = false
+	quotepath = false
+[include]
+	path = ~/.gitconfig.local
 [pull]
 	rebase = false
 [alias]
