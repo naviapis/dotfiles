@@ -1,0 +1,64 @@
+# Homebrew
+# https://brew.sh/
+tap 'beeftornado/rmtree'
+
+brew 'chezmoi'
+brew 'curl'
+brew 'gh'
+brew 'gpg'
+brew 'git'
+brew 'httpie'
+brew 'jq'
+brew 'mackup'
+brew 'mise'
+brew 'neovim'
+brew 'openssl'
+brew 'tmux'
+brew 'trash'
+brew 'tree'
+brew 'wget'
+brew 'xdg-ninja', args: ['HEAD']
+brew 'zsh'
+
+# A curated list of command-line utilities written in Rust
+# https://gist.github.com/sts10/daadbc2f403bdffad1b6d33aff016c0a
+brew 'bat'
+brew 'fd'
+brew 'tealdear'
+brew 'ripgrep'
+
+# brew tap shivammathur/php
+# https://github.com/shivammathur/homebrew-php
+brew 'shivammathur/php/php@7.4'
+brew 'shivammathur/php/php@8.3'
+
+cask '1password'
+cask 'alfred'
+cask 'appcleaner'
+cask 'bartender'
+cask 'dropbox'
+cask 'flux'
+cask 'font-cica'
+cask 'google-chrome'
+cask 'istat-menus'
+cask 'iterm2'
+cask 'jetbrains-toolbox'
+cask 'notunes'
+cask 'obsidian'
+cask 'orbstack'
+cask 'karabiner-elements'
+cask 'microsoft-remote-desktop'
+cask 'monitorcontrol'
+cask 'moom'
+cask 'postman'
+cask 'readdle-spark'
+cask 'slack'
+cask 'the-unarchiver'
+cask 'wine-stable'
+cask 'visual-studio-code'
+cask 'vpn-tracker-365'
+
+# mas-cli
+# https://github.com/mas-cli/mas
+mas 'Amphetamine', id: 937984704
+mas 'Paste Plain Text', id: 1407015686

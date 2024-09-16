@@ -1,7 +1,0 @@
-[submodule "dotbot"]
-	path = dotbot
-	url = https://github.com/anishathalye/dotbot
-	ignore = dirty
-[submodule "config/SpaceVim"]
-	path = config/SpaceVim
-	url = https://github.com/SpaceVim/SpaceVim.git

@@ -1,0 +1,39 @@
+["{{ joinPath .paths.ZSH }}"]
+    type = "archive"
+    url = "https://github.com/ohmyzsh/ohmyzsh/archive/master.tar.gz"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
+["{{ joinPath .paths.ZSH_CUSTOM "plugins/zsh-autosuggestions" }}"]
+    type = "archive"
+    url = "https://github.com/zsh-users/zsh-autosuggestions/archive/master.tar.gz"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
+["{{ joinPath .paths.ZSH_CUSTOM "plugins/zsh-completions" }}"]
+    type = "archive"
+    url = "https://github.com/zsh-users/zsh-completions/archive/master.tar.gz"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
+["{{ joinPath .paths.ZSH_CUSTOM "plugins/zsh-syntax-highlighting" }}"]
+    type = "archive"
+    url = "https://github.com/zsh-users/zsh-syntax-highlighting/archive/master.tar.gz"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
+["{{ joinPath .paths.ZSH_CUSTOM "themes/powerlevel10k" }}"]
+    type = "archive"
+    url = "https://github.com/romkatv/powerlevel10k/archive/master.tar.gz"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
+["{{ joinPath .paths.ZSH_CUSTOM "p10k.zsh" }}"]
+    type = "file"
+    url = "https://raw.githubusercontent.com/romkatv/powerlevel10k/master/config/p10k-classic.zsh"
+    refreshPeriod = "168h"
+[".local/bin/mise-x64"]
+    type = "file"
+    url = "https://mise.jdx.dev/mise-latest-macos-x64"
+    refreshPeriod = "168h"
+    executable = true

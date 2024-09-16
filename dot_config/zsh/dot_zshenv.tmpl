@@ -1,0 +1,23 @@
+# XDG Base Directory
+# https://wiki.archlinux.jp/index.php/XDG_Base_Directory
+export XDG_CONFIG_HOME="{{ joinPath "$HOME" .paths.XDG_CONFIG_HOME }}"
+export XDG_CACHE_HOME="{{ joinPath "$HOME" .paths.XDG_CACHE_HOME }}"
+export XDG_DATA_HOME="{{ joinPath "$HOME" .paths.XDG_DATA_HOME }}"
+export XDG_STATE_HOME="{{ joinPath "$HOME" .paths.XDG_STATE_HOME }}"
+export XDG_RUNTIME_DIR="{{ joinPath "$HOME" .paths.XDG_RUNTIME_DIR }}"
+
+# Docker
+# https://docs.docker.jp/engine/reference/commandline/cli.html#id6
+export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
+
+# npm
+# https://docs.npmjs.com/cli/v10/using-npm/config#npmrc-files
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
+
+# Python
+# https://docs.python.org/ja/3/using/cmdline.html#envvar-PYTHONSTARTUP
+export PYTHONSTARTUP="$XDG_CONFIG_HOME"/python/pythonrc
+
+# 1Password
+# https://developer.1password.com/docs/ssh/agent/compatibility/#ssh-auth-sock
+export SSH_AUTH_SOCK="$HOME/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
