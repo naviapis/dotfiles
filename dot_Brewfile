@@ -62,3 +62,11 @@ cask 'vpn-tracker-365'
 # https://github.com/mas-cli/mas
 mas 'Amphetamine', id: 937984704
 mas 'Paste Plain Text', id: 1407015686
+
+# Visual Studio Code
+# https://code.visualstudio.com/
+vscode "editorconfig.editorconfig"
+vscode "ms-ceintl.vscode-language-pack-ja"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
