@@ -1,3 +1,0 @@
-{{ joinPath .paths.XDG_DATA_HOME "oh-my-zsh/cache/*" }}
-**/*.zwc
-README.md

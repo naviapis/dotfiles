@@ -71,15 +71,30 @@ ZSH_CUSTOM=$ZDOTDIR/custom
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+    alias-finder
+    brew
     docker
+    docker-compose
+    fzf
+    gh
     git
     laravel
     mise
     zsh-autosuggestions
+    zsh-history-substring-search
     zsh-syntax-highlighting
 )
 
-fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+# alias-finder plugin
+# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/alias-finder
+zstyle ':omz:plugins:alias-finder' autoload yes
+zstyle ':omz:plugins:alias-finder' longer no
+zstyle ':omz:plugins:alias-finder' exact yes
+zstyle ':omz:plugins:alias-finder' cheaper yes
+
+# zsh-completions
+# https://github.com/zsh-users/zsh-completions
+fpath+=$ZSH_CUSTOM/plugins/zsh-completions/src
 
 source $ZSH/oh-my-zsh.sh
 

@@ -4,18 +4,16 @@ tap 'beeftornado/rmtree'
 
 brew 'chezmoi'
 brew 'curl'
+brew 'fzf'
 brew 'gh'
-brew 'gpg'
+brew 'ghq'
 brew 'git'
-brew 'httpie'
+brew 'gpg'
 brew 'jq'
-brew 'mackup'
 brew 'mise'
 brew 'neovim'
-brew 'openssl'
 brew 'tmux'
 brew 'trash'
-brew 'tree'
 brew 'wget'
 brew 'xdg-ninja', args: ['HEAD']
 brew 'zsh'
@@ -24,21 +22,24 @@ brew 'zsh'
 # https://gist.github.com/sts10/daadbc2f403bdffad1b6d33aff016c0a
 brew 'bat'
 brew 'fd'
-brew 'tealdear'
+brew 'tealdeer'
 brew 'ripgrep'
+brew 'xh'
 
 # brew tap shivammathur/php
 # https://github.com/shivammathur/homebrew-php
+brew 'shivammathur/php/php@7.3'
 brew 'shivammathur/php/php@7.4'
 brew 'shivammathur/php/php@8.3'
 
 cask '1password'
+cask '1password-cli'
 cask 'alfred'
 cask 'appcleaner'
 cask 'bartender'
+cask 'chatgpt'
 cask 'dropbox'
-cask 'flux'
-cask 'font-cica'
+cask 'font-meslo-for-powerlevel10k'
 cask 'google-chrome'
 cask 'istat-menus'
 cask 'iterm2'
@@ -47,26 +48,18 @@ cask 'notunes'
 cask 'obsidian'
 cask 'orbstack'
 cask 'karabiner-elements'
-cask 'microsoft-remote-desktop'
 cask 'monitorcontrol'
 cask 'moom'
 cask 'postman'
 cask 'readdle-spark'
+cask 'sequel-ace'
 cask 'slack'
 cask 'the-unarchiver'
-cask 'wine-stable'
 cask 'visual-studio-code'
 cask 'vpn-tracker-365'
 
 # mas-cli
 # https://github.com/mas-cli/mas
 mas 'Amphetamine', id: 937984704
-mas 'Paste Plain Text', id: 1407015686
-
-# Visual Studio Code
-# https://code.visualstudio.com/
-vscode "editorconfig.editorconfig"
-vscode "ms-ceintl.vscode-language-pack-ja"
-vscode "ms-python.debugpy"
-vscode "ms-python.python"
-vscode "ms-python.vscode-pylance"
+mas 'Pure Paste', id: 1611378436
+mas 'Windows App', id: 1295203466

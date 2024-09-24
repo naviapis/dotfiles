@@ -1,0 +1,6 @@
+[tools]
+go = "latest"
+node = ["latest", "10"]
+php = ["latest", "7.4", "7.3"]
+python = ["latest", "3.6", "2.7"]
+yarn = ["latest", "1"]

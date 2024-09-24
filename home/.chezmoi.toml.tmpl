@@ -1,8 +1,12 @@
+{{- $userName := "Haruki Fukui" -}}
+{{- $userEmail := "haruki.fukui@naviapps.com" -}}
+{{- $MYSQL_ROOT_PASSWORD := "password" -}}
+
 {{- $XDG_DATA_HOME := ".local/share" -}}
 {{- $XDG_CONFIG_HOME := ".config" -}}
 {{- $ZDOTDIR := joinPath $XDG_CONFIG_HOME "zsh" -}}
 
-[data.paths]
+[data]
     XDG_DATA_HOME = ".local/share"
     XDG_CONFIG_HOME = ".config"
     XDG_STATE_HOME = ".local/state"
@@ -11,7 +15,8 @@
     ZDOTDIR = "{{ $ZDOTDIR }}"
     ZSH = "{{ joinPath $XDG_DATA_HOME "oh-my-zsh" }}"
     ZSH_CUSTOM = "{{ joinPath $ZDOTDIR "custom" }}"
+    MYSQL_ROOT_PASSWORD = "{{ $MYSQL_ROOT_PASSWORD }}"
 
 [data.user]
-    name = "Haruki Fukui"
-    email = "haruki.fukui@naviapps.com"
+    name = "{{ $userName }}"
+    email = "{{ $userEmail }}"
