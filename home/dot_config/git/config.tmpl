@@ -1,12 +1,12 @@
 [user]
 	name = {{ .user.name | quote }}
 	email = {{ .user.email | quote }}
-[init]
-	defaultBranch = main
-[core]
-	editor = nvim
 [color]
 	ui = auto
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
 [pull]
 	ff = only
 [push]
@@ -14,7 +14,7 @@
 	useForceIfIncludes = true
 [alias]
 	pushf = push --force-with-lease --force-if-includes
-[ghq]
-	root = ~/src
 [credential]
 	helper = osxkeychain
+[ghq]
+	root = ~/src

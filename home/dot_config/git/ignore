@@ -24,3 +24,8 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# mise-en-place
+# https://mise.jdx.dev/
+.tool-versions
+.mise.toml

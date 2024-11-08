@@ -1,6 +1,7 @@
 name: home
 services:
   mysql:
+    container_name: home_mysql
     image: 'mysql:9.0'
     platform: linux/amd64
     ports:
@@ -10,6 +11,7 @@ services:
     volumes:
       - 'mysql:/var/lib/mysql'
   mysql57:
+    container_name: home_mysql57
     image: 'mysql:5.7'
     platform: linux/amd64
     ports:

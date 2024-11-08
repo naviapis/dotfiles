@@ -2,6 +2,7 @@
 # https://brew.sh/
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# OrbStack
-# https://orbstack.dev/
-source ~/.orbstack/shell/init.zsh 2>/dev/null || :
+path=(
+    "$(brew --prefix)"/opt/mysql-client/bin(N-/)
+    $path
+)
