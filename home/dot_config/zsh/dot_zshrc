@@ -7,7 +7,7 @@ path=(
 )
 
 # Path to your Oh My Zsh installation.
-export ZSH=$XDG_DATA_HOME/oh-my-zsh
+export ZSH="$XDG_DATA_HOME"/oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -68,7 +68,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=$ZDOTDIR/custom
+ZSH_CUSTOM=$ZDOTDIR
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -76,30 +76,24 @@ ZSH_CUSTOM=$ZDOTDIR/custom
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    alias-finder
     brew
+    chezmoi
     docker
     docker-compose
-    fzf
     gh
     git
     laravel
     mise
+    symfony6
     zsh-autosuggestions
     zsh-history-substring-search
     zsh-syntax-highlighting
 )
 
-# alias-finder plugin
-# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/alias-finder
-zstyle ':omz:plugins:alias-finder' autoload yes
-zstyle ':omz:plugins:alias-finder' longer no
-zstyle ':omz:plugins:alias-finder' exact yes
-zstyle ':omz:plugins:alias-finder' cheaper yes
-
 # zsh-completions
 # https://github.com/zsh-users/zsh-completions
-fpath+=$ZSH_CUSTOM/plugins/zsh-completions/src
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 

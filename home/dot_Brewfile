@@ -1,64 +1,52 @@
 # Homebrew
-# https://brew.sh/
-tap 'beeftornado/rmtree'
-
+# https://brew.sh
 brew 'chezmoi'
-brew 'curl'
-brew 'fzf'
 brew 'gh'
-brew 'ghq'
 brew 'git'
-brew 'gpg'
-brew 'jq'
-brew 'mise'
-brew 'mysql-client'
-brew 'neovim'
-brew 'tmux'
-brew 'trash'
-brew 'wget'
-brew 'xdg-ninja', args: ['HEAD']
+brew 'symfony-cli/tap/symfony-cli'
+brew 'xdg-ninja', args: ['HEAD']  # https://github.com/b3nj5m1n/xdg-ninja
 brew 'zsh'
 
 # A curated list of command-line utilities written in Rust
-# https://gist.github.com/sts10/daadbc2f403bdffad1b6d33aff016c0a
-brew 'bat'
-brew 'fd'
-brew 'tealdeer'
-brew 'ripgrep'
-brew 'xh'
+# https://github.com/sts10/rust-command-line-utilities
+brew 'bat'       # https://github.com/sharkdp/bat
+brew 'eza'       # https://github.com/eza-community/eza
+brew 'mise'      # https://github.com/jdx/mise
+brew 'tealdeer'  # https://github.com/tealdeer-rs/tealdeer
+brew 'xh'        # https://github.com/ducaale/xh
 
 # brew tap shivammathur/php
 # https://github.com/shivammathur/homebrew-php
 brew 'shivammathur/php/php@7.3'
 brew 'shivammathur/php/php@7.4'
-brew 'shivammathur/php/php@8.3'
+brew 'shivammathur/php/php'
 
 cask '1password'
-cask 'alfred'
-cask 'appcleaner'
-cask 'bartender'
 cask 'chatgpt'
+cask 'dbngin'
 cask 'docker'
 cask 'dropbox'
 cask 'font-meslo-for-powerlevel10k'
 cask 'google-chrome'
-cask 'istat-menus'
 cask 'iterm2'
 cask 'jetbrains-toolbox'
-cask 'notunes'
+cask 'jordanbaird-ice'
 cask 'karabiner-elements'
-cask 'monitorcontrol'
+cask 'keka'
+cask 'maccy'
 cask 'moom'
+cask 'notunes'
+cask 'pearcleaner'
 cask 'postman'
 cask 'readdle-spark'
 cask 'sequel-ace'
 cask 'slack'
-cask 'the-unarchiver'
 cask 'visual-studio-code'
 cask 'vpn-tracker-365'
 
-# mas-cli
+# mas
 # https://github.com/mas-cli/mas
 mas 'Amphetamine', id: 937984704
-mas 'Pure Paste', id: 1611378436
-mas 'Windows App', id: 1295203466
+mas 'Dato', id: 1470584107
+mas 'Things 3', id: 904237743
+mas 'UpNote', id: 1398373917

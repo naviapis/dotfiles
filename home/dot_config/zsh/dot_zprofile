@@ -1,8 +1,3 @@
 # Homebrew
-# https://brew.sh/
+# https://brew.sh
 eval "$(/opt/homebrew/bin/brew shellenv)"
-
-path=(
-    "$(brew --prefix)"/opt/mysql-client/bin(N-/)
-    $path
-)

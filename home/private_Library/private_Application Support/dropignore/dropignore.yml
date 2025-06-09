@@ -1,0 +1,9 @@
+# dropignore
+# https://github.com/mweirauch/dropignore
+matcher:
+  ignore-specs:
+    - pattern: "**/.output"
+    - pattern: "**/.wxt"
+    - pattern: "**/node_modules"
+    - pattern: "**/vendor"
+    - pattern: "**/venv"

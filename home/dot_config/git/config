@@ -1,0 +1,28 @@
+[user]
+    name  = "Haruki Fukui"
+    email = "haruki.fukui@naviapps.com"
+
+[core]
+    editor = vim
+
+[color]
+    ui = auto
+
+[credential]
+    helper = osxkeychain
+
+[init]
+    defaultBranch = main
+
+[fetch]
+    prune = true
+
+[pull]
+    rebase    = true
+    autoStash = true
+
+[push]
+    autoSetupRemote = true
+
+[log]
+    date = iso

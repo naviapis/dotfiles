@@ -1,44 +1,49 @@
-[".local/bin/mise-x64"]
-    type = "file"
-    url = "https://mise.jdx.dev/mise-latest-macos-x64"
-    executable = true
-["{{ joinPath .ZSH }}"]
+# Include dotfiles from elsewhere - chezmoi
+# https://www.chezmoi.io/user-guide/include-files-from-elsewhere/
+["{{ .XDG_DATA_HOME }}/oh-my-zsh"]
     type = "archive"
     url = "https://github.com/ohmyzsh/ohmyzsh/archive/master.tar.gz"
     exact = true
     stripComponents = 1
     refreshPeriod = "168h"
-["{{ joinPath .ZSH_CUSTOM "plugins/zsh-autosuggestions" }}"]
+["{{ .XDG_CONFIG_HOME }}/zsh/plugins/zsh-autosuggestions"]
     type = "archive"
     url = "https://github.com/zsh-users/zsh-autosuggestions/archive/master.tar.gz"
     exact = true
     stripComponents = 1
     refreshPeriod = "168h"
-["{{ joinPath .ZSH_CUSTOM "plugins/zsh-completions" }}"]
+["{{ .XDG_CONFIG_HOME }}/zsh/plugins/zsh-completions"]
     type = "archive"
     url = "https://github.com/zsh-users/zsh-completions/archive/master.tar.gz"
     exact = true
     stripComponents = 1
     refreshPeriod = "168h"
-["{{ joinPath .ZSH_CUSTOM "plugins/zsh-history-substring-search" }}"]
+["{{ .XDG_CONFIG_HOME }}/zsh/plugins/zsh-history-substring-search"]
     type = "archive"
     url = "https://github.com/zsh-users/zsh-history-substring-search/archive/master.tar.gz"
     exact = true
     stripComponents = 1
     refreshPeriod = "168h"
-["{{ joinPath .ZSH_CUSTOM "plugins/zsh-syntax-highlighting" }}"]
+["{{ .XDG_CONFIG_HOME }}/zsh/plugins/zsh-syntax-highlighting"]
     type = "archive"
     url = "https://github.com/zsh-users/zsh-syntax-highlighting/archive/master.tar.gz"
     exact = true
     stripComponents = 1
     refreshPeriod = "168h"
-["{{ joinPath .ZSH_CUSTOM "themes/powerlevel10k" }}"]
+["{{ .XDG_CONFIG_HOME }}/zsh/themes/powerlevel10k"]
     type = "archive"
     url = "https://github.com/romkatv/powerlevel10k/archive/master.tar.gz"
     exact = true
     stripComponents = 1
-    refreshPeriod = "168h"
-["{{ joinPath .ZSH_CUSTOM "p10k.zsh" }}"]
+["{{ .XDG_CONFIG_HOME }}/zsh/p10k.zsh"]
     type = "file"
-    url = "https://raw.githubusercontent.com/romkatv/powerlevel10k/master/config/p10k-classic.zsh"
+    url = "https://raw.githubusercontent.com/romkatv/powerlevel10k/refs/heads/master/config/p10k-lean.zsh"
     refreshPeriod = "168h"
+[".local/bin/mise-x64"]
+    type = "file"
+    url = "https://mise.jdx.dev/mise-latest-macos-x64"
+    executable = true
+[".local/bin/dropignore"]
+    type = "archive-file"
+    url = "https://github.com/mweirauch/dropignore/releases/download/0.1.1/dropignore-macos-x86_64.tar.gz"
+    path = "dropignore"

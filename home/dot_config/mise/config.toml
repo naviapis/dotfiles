@@ -1,5 +1,10 @@
+# Configuration - mise-en-place
+# https://mise.jdx.dev/configuration.html
 [tools]
 node = ["latest", "10"]
 php = ["latest", "7.4", "7.3"]
 python = ["latest", "3.6", "2.7"]
 yarn = ["latest", "1"]
+
+[settings]
+idiomatic_version_file_enable_tools = ["node", "php", "python", "yarn"]
