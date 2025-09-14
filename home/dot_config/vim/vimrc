@@ -1,3 +1,0 @@
-set number
-
-if !has('nvim') | set viminfofile=$XDG_CACHE_HOME/vim/viminfo | endif

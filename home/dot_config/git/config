@@ -15,14 +15,19 @@
     defaultBranch = main
 
 [fetch]
-    prune = true
+    prune     = true
+    pruneTags = true
 
 [pull]
     rebase    = true
     autoStash = true
 
+[rebase]
+    autoSquash = true
+    autoStash  = true
+
 [push]
     autoSetupRemote = true
 
 [log]
-    date = iso
+    date = iso-strict
