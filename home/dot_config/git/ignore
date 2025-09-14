@@ -36,4 +36,6 @@ Temporary Items
 
 # End of https://www.toptal.com/developers/gitignore/api/macos
 
-.idea
+.idea/
+.vscode/
+mise.local.toml

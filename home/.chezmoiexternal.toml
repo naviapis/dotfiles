@@ -35,15 +35,12 @@
     url = "https://github.com/romkatv/powerlevel10k/archive/master.tar.gz"
     exact = true
     stripComponents = 1
+    refreshPeriod = "168h"
 ["{{ .XDG_CONFIG_HOME }}/zsh/p10k.zsh"]
     type = "file"
-    url = "https://raw.githubusercontent.com/romkatv/powerlevel10k/refs/heads/master/config/p10k-lean.zsh"
+    url = "https://raw.githubusercontent.com/romkatv/powerlevel10k/refs/heads/master/config/p10k-classic.zsh"
     refreshPeriod = "168h"
 [".local/bin/mise-x64"]
     type = "file"
     url = "https://mise.jdx.dev/mise-latest-macos-x64"
     executable = true
-[".local/bin/dropignore"]
-    type = "archive-file"
-    url = "https://github.com/mweirauch/dropignore/releases/download/0.1.1/dropignore-macos-x86_64.tar.gz"
-    path = "dropignore"

@@ -1,52 +1,62 @@
 # Homebrew
-# https://brew.sh
+# https://docs.brew.sh/Brew-Bundle-and-Brewfile
+
+# taps
+tap 'shivammathur/php'
+
+# formulae
+brew 'bat'
 brew 'chezmoi'
+brew 'composer'
+brew 'eza'
 brew 'gh'
 brew 'git'
-brew 'symfony-cli/tap/symfony-cli'
-brew 'xdg-ninja', args: ['HEAD']  # https://github.com/b3nj5m1n/xdg-ninja
+brew 'less'
+brew 'mailpit', restart_service: :changed
+brew 'mas'  # https://github.com/mas-cli/mas
+brew 'mise'
+brew 'neovim'
+brew 'php'
+brew 'symfony-cli'
+brew 'xdg-ninja', args: ['HEAD']
 brew 'zsh'
 
-# A curated list of command-line utilities written in Rust
-# https://github.com/sts10/rust-command-line-utilities
-brew 'bat'       # https://github.com/sharkdp/bat
-brew 'eza'       # https://github.com/eza-community/eza
-brew 'mise'      # https://github.com/jdx/mise
-brew 'tealdeer'  # https://github.com/tealdeer-rs/tealdeer
-brew 'xh'        # https://github.com/ducaale/xh
-
-# brew tap shivammathur/php
-# https://github.com/shivammathur/homebrew-php
-brew 'shivammathur/php/php@7.3'
-brew 'shivammathur/php/php@7.4'
-brew 'shivammathur/php/php'
-
-cask '1password'
+# casks
+cask 'alt-tab'
 cask 'chatgpt'
+cask 'claude-code'
 cask 'dbngin'
-cask 'docker'
+cask 'dockdoor'
 cask 'dropbox'
 cask 'font-meslo-for-powerlevel10k'
 cask 'google-chrome'
 cask 'iterm2'
-cask 'jetbrains-toolbox'
-cask 'jordanbaird-ice'
 cask 'karabiner-elements'
 cask 'keka'
-cask 'maccy'
-cask 'moom'
 cask 'notunes'
+cask 'orbstack'
 cask 'pearcleaner'
 cask 'postman'
 cask 'readdle-spark'
 cask 'sequel-ace'
 cask 'slack'
 cask 'visual-studio-code'
+
+# casks - subscription
+cask '1password'
+cask 'jetbrains-toolbox'
 cask 'vpn-tracker-365'
 
+# casks - paid
+cask 'bartender'
+cask 'mission-control-plus'
+cask 'moom'
+
 # mas
-# https://github.com/mas-cli/mas
 mas 'Amphetamine', id: 937984704
+mas 'Xcode', id: 497799835
+
+# mas - paid
 mas 'Dato', id: 1470584107
-mas 'Things 3', id: 904237743
+mas 'Things', id: 904280696
 mas 'UpNote', id: 1398373917

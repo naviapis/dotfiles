@@ -78,11 +78,11 @@ ZSH_CUSTOM=$ZDOTDIR
 plugins=(
     brew
     chezmoi
+    composer
     docker
     docker-compose
     gh
     git
-    laravel
     mise
     symfony6
     zsh-autosuggestions
