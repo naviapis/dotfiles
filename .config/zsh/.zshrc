@@ -7,7 +7,7 @@ path=(
 )
 
 # Path to your Oh My Zsh installation.
-export ZSH="$XDG_DATA_HOME"/oh-my-zsh
+export ZSH="${XDG_DATA_HOME}/oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -68,7 +68,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=$ZDOTDIR
+export ZSH_CUSTOM="${XDG_CONFIG_HOME}/zsh"
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -77,25 +77,35 @@ ZSH_CUSTOM=$ZDOTDIR
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     brew
-    chezmoi
     composer
     docker
     docker-compose
+    eza
+    fzf
     gh
     git
     mise
+    symfony2
     symfony6
     zsh-autosuggestions
     zsh-history-substring-search
     zsh-syntax-highlighting
 )
 
+# Figure out the SHORT hostname
+SHORT_HOST=$(scutil --get LocalHostName 2>/dev/null) || SHORT_HOST="${HOST/.*/}"
+
+# Save the location of the current completion dump file.
+export ZSH_COMPDUMP="${XDG_CACHE_HOME}/zsh/zcompdump-${SHORT_HOST}-${ZSH_VERSION}"
+
 # zsh-completions
 # https://github.com/zsh-users/zsh-completions
-fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
-autoload -U compinit && compinit
+fpath+=("${ZSH_CUSTOM}/plugins/zsh-completions/src")
 
-source $ZSH/oh-my-zsh.sh
+source "${ZSH}/oh-my-zsh.sh"
+
+## History file configuration
+export HISTFILE="${XDG_STATE_HOME}/zsh/history"
 
 # User configuration
 

@@ -1,0 +1,1 @@
+./themes/powerlevel10k/config/p10k-classic.zsh

@@ -1,0 +1,18 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.config/git: .config/git
+    ~/.config/mise: .config/mise
+    ~/.config/nvim: .config/nvim
+    ~/.config/zsh: .config/zsh
+    ~/.local/share/oh-my-zsh: .local/share/oh-my-zsh
+    ~/.Brewfile: .Brewfile
+
+- create:
+  - ~/.local/share/zsh
+  - ~/.local/state/zsh

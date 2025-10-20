@@ -1,2 +1,0 @@
-{{ .XDG_DATA_HOME }}/oh-my-zsh/cache/*
-**/*.zwc

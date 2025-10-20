@@ -3,7 +3,7 @@
     email = "haruki.fukui@naviapps.com"
 
 [core]
-    editor = vim
+    editor = nvim
 
 [color]
     ui = auto
@@ -24,7 +24,6 @@
 
 [rebase]
     autoSquash = true
-    autoStash  = true
 
 [push]
     autoSetupRemote = true
