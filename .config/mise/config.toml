@@ -1,0 +1,9 @@
+[tools]
+node = "latest"
+python = "latest"
+shellcheck = "latest"
+shfmt = "latest"
+uv = "latest"
+
+[settings]
+trusted_config_paths = ["~/.codex/worktrees"]

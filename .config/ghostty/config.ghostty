@@ -1,0 +1,5 @@
+# https://ghostty.zerebos.com
+
+font-family = "JetBrainsMono Nerd Font"
+theme = Gruvbox Material Dark
+macos-option-as-alt = left

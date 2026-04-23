@@ -1,0 +1,26 @@
+# https://github.com/anishathalye/dotbot
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean:
+    ~/.config:
+      recursive: true
+    ~/.ssh:
+      recursive: true
+
+- link:
+    ~/.config/direnv: .config/direnv
+    ~/.config/ghostty: .config/ghostty
+    ~/.config/git: .config/git
+    ~/.config/mise: .config/mise
+    ~/.config/nvim: .config/nvim
+    ~/.config/zsh: .config/zsh
+    ~/.ssh/:
+      glob: true
+      path: .ssh/*
+
+- create:
+    - ~/.cache/zsh
+    - ~/.local/state/zsh

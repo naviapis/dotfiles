@@ -1,0 +1,56 @@
+[core]
+	editor = "nvim"
+	pager = "delta"
+
+[credential]
+	helper = "osxkeychain"
+
+[credential "https://gist.github.com"]
+	helper = ""
+	helper = "!gh auth git-credential"
+
+[credential "https://github.com"]
+	helper = ""
+	helper = "!gh auth git-credential"
+
+[delta]
+	hyperlinks = true
+	line-numbers = true
+	navigate = true
+
+[diff]
+	algorithm = "histogram"
+	colorMoved = "zebra"
+
+[fetch]
+	prune = true
+	pruneTags = true
+
+[init]
+	defaultBranch = "main"
+
+[interactive]
+	diffFilter = "delta --color-only"
+
+[log]
+	date = "iso-local"
+
+[merge]
+	conflictstyle = "zdiff3"
+
+[pull]
+	rebase = true
+
+[push]
+	autoSetupRemote = true
+
+[rebase]
+	autoSquash = true
+	autoStash = true
+
+[rerere]
+	enabled = true
+
+[user]
+	email = "haruki.fukui@naviapps.com"
+	name = "Haruki Fukui"

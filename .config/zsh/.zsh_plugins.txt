@@ -1,0 +1,20 @@
+zsh-users/zsh-completions kind:fpath path:src
+
+getantidote/use-omz
+ohmyzsh/ohmyzsh path:lib
+ohmyzsh/ohmyzsh path:plugins/brew
+ohmyzsh/ohmyzsh path:plugins/direnv
+ohmyzsh/ohmyzsh path:plugins/eza
+ohmyzsh/ohmyzsh path:plugins/fzf
+ohmyzsh/ohmyzsh path:plugins/git
+ohmyzsh/ohmyzsh path:plugins/mise
+ohmyzsh/ohmyzsh path:plugins/zoxide
+
+romkatv/powerlevel10k
+# https://github.com/romkatv/powerlevel10k/tree/master/config
+romkatv/powerlevel10k path:config/p10k-lean.zsh
+
+MichaelAquilina/zsh-you-should-use
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-history-substring-search
+zsh-users/zsh-syntax-highlighting
