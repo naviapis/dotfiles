@@ -1,0 +1,102 @@
+[bootstrap.packages]
+# Homebrew formulae
+"brew:antidote" = "latest"
+"brew:bat" = "latest"
+"brew:eza" = "latest"
+"brew:fd" = "latest"
+"brew:fzf" = "latest"
+"brew:gh" = "latest"
+"brew:git" = "latest"
+"brew:jq" = "latest"
+"brew:lazygit" = "latest"
+"brew:mas" = "latest"
+"brew:mise" = "latest"
+"brew:neovim" = "latest"
+"brew:ripgrep" = "latest"
+"brew:xdg-ninja" = "latest"
+"brew:yq" = "latest"
+"brew:zoxide" = "latest"
+
+# https://github.com/jdx/vfox-php
+"brew:autoconf" = "latest"
+"brew:bison" = "latest"
+"brew:bzip2" = "latest"
+"brew:gd" = "latest"
+"brew:gmp" = "latest"
+"brew:icu4c@78" = "latest"
+"brew:jpeg" = "latest"
+"brew:libiconv" = "latest"
+"brew:libsodium" = "latest"
+"brew:libxml2" = "latest"
+"brew:libzip" = "latest"
+"brew:pkgconf" = "latest"
+"brew:re2c" = "latest"
+"brew:sqlite" = "latest"
+"brew:zlib" = "latest"
+
+
+# Homebrew casks
+"brew-cask:1password-cli" = "latest"
+"brew-cask:bruno" = "latest"
+"brew-cask:chatgpt" = "latest"
+"brew-cask:codexbar" = "latest"
+"brew-cask:dockdoor" = "latest"
+"brew-cask:font-jetbrains-mono-nerd-font" = "latest"
+"brew-cask:ghostty" = "latest"
+"brew-cask:google-chrome" = "latest"
+"brew-cask:karabiner-elements" = "latest"
+"brew-cask:notunes" = "latest"
+"brew-cask:obsidian" = "latest"
+"brew-cask:orbstack" = "latest"
+"brew-cask:raycast" = "latest"
+"brew-cask:slack" = "latest"
+"brew-cask:tailscale-app" = "latest"
+"brew-cask:tigervnc" = "latest"
+"brew-cask:visual-studio-code" = "latest"
+
+# Paid
+"brew-cask:1password" = "latest"
+"brew-cask:default-folder-x" = "latest"
+"brew-cask:istat-menus" = "latest"
+"brew-cask:launchos" = "latest"
+"brew-cask:mission-control-plus" = "latest"
+"brew-cask:mole-app" = "latest"
+"brew-cask:popclip" = "latest"
+"brew-cask:tablepro" = "latest"
+
+# Subscription
+"brew-cask:cleanshot" = "latest"
+"brew-cask:moom" = "latest"
+"brew-cask:vpn-tracker-365" = "latest"
+
+
+# Mac App Store applications
+"mas:937984704" = "latest"  # Amphetamine
+"mas:640199958" = "latest"  # Developer
+"mas:497799835" = "latest"  # Xcode
+
+# Paid
+"mas:1470584107" = "latest"  # Dato
+
+[dotfiles]
+"~/.config/ghostty" = ".config/ghostty"
+"~/.config/git" = ".config/git"
+"~/.config/mise" = ".config/mise"
+"~/.config/nvim" = ".config/nvim"
+"~/.config/zsh" = ".config/zsh"
+"~/.ssh/*" = ".ssh/*"
+"~/.zshenv" = ".config/zsh/.zshenv"
+
+[bootstrap.macos.dock]
+tilesize = 48
+show_recents = false
+mru_spaces = false
+
+[bootstrap.macos.finder]
+sort_folders_first = true
+show_pathbar = true
+preferred_view_style = "list"
+
+[bootstrap.macos.keyboard]
+automatic_capitalization = false
+automatic_spelling_correction = false

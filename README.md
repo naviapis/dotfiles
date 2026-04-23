@@ -2,33 +2,16 @@
 
 ## Homebrew
 
-https://brew.sh/ja/
+https://brew.sh
 
 ```bash
-$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-$ eval "$(/opt/homebrew/bin/brew shellenv)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-## chezmoi
-
-https://www.chezmoi.io/
+## mise
 
 ```bash
-$ brew install chezmoi
-$ chezmoi init https://github.com/naviapis/dotfiles.git
-$ chezmoi apply -v
-```
-
-## Homebrew Bundle
-
-```bash
-$ brew bundle --global
-```
-
-## mise-en-place
-
-https://mise.jdx.dev/
-
-```bash
-$ mise link php@brew $(brew --prefix php)
+brew install mise
+mise bootstrap --from https://github.com/naviapis/dotfiles.git --from-dir ~/src/github.com/naviapis/dotfiles
 ```

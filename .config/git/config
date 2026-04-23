@@ -1,0 +1,46 @@
+[core]
+	editor = "nvim"
+
+[credential]
+	helper = "osxkeychain"
+
+[credential "https://gist.github.com"]
+	helper = ""
+	helper = "!gh auth git-credential"
+
+[credential "https://github.com"]
+	helper = ""
+	helper = "!gh auth git-credential"
+
+[diff]
+	algorithm = "histogram"
+	colorMoved = "zebra"
+
+[fetch]
+	prune = true
+
+[init]
+	defaultBranch = "main"
+
+[log]
+	date = "iso-local"
+
+[merge]
+	conflictStyle = "zdiff3"
+
+[pull]
+	rebase = true
+
+[push]
+	autoSetupRemote = true
+
+[rebase]
+	autoSquash = true
+	autoStash = true
+
+[rerere]
+	enabled = true
+
+[user]
+	email = "haruki.fukui@naviapps.com"
+	name = "Haruki Fukui"
